@@ -1,0 +1,17 @@
+#register_head {
+    border-bottom: 2px solid #BC0E31;
+    overflow: hidden;
+}
+#register_head .head_main {
+    width: 1200px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 20px 0px;
+}
+#register_head .head_main h2 {
+    float: left;
+}
+#register_head .head_main .right {
+    float: right;
+}

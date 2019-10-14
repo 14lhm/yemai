@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/init.css">
+    <link rel="stylesheet" href="../css/loghead.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/regist.css">
+    <script src="../jq/jquery-3.4.1.min.js"></script>
+    <script src="../js/captcha-mini.js"></script>
+    <script src="../js/regist.js"></script>
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <header id="register_head"></header>
+    <section class="login content">
+        <div class="box-main clearfix">
+            <div class="mod-login fl">
+                <h2>注册也买酒</h2>
+                <a class="blue" href="toLogin.jspa"
+                    style="position: relative; top: -38px; left: 157px;color: #06c;">您可以使用QQ、支付宝、新浪微博登录</a>
+                <form id="registerFrm" name="registerFrm" class="frm-register" action="quickRegister.jspa" method="post"
+                    novalidate="novalidate">
+                    <input type="hidden" class="hd-pagetype" name="pagetype" value="common">
+                    <input type="hidden" class="hd-crossdomain" name="crossdomain" value="">
+                    <input type="hidden" class="hd-to" name="to" value="">
+                    <input type="hidden" class="hd-inviteCode" name="inviteCode" value="">
+                    <dl>
+                        <dt>手机号码:</dt>
+                        <dd>
+                            <input type="text" value="" id="registerMobile" name="registerMobile" class="txt-input txt-user hint-user"
+                                maxlength="11">
+                            <div class="error registerMobileError hidden errorInfo"></div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>验证码:</dt>
+                        <dd>
+                            <input type="text" value="" id="imgCode" name="imgCode"
+                                class="txt-input txt-validcode txt-randcode txt-imgCode hint-randcode" maxlength="5">
+                            <div class="cap">
+                                <canvas width="100" height="40" id="captcha"></canvas>
+                                
+                            </div>
+                            <div class="error imgCodeError hidden errorInfo"></div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>短信验证码:</dt>
+                        <dd>
+                            <input type="text" value="" id="smsCode" name="smsCode"
+                                class="txt-input txt-validcode txt-randcode txt-smsCode hint-randcode" maxlength="4">
+                            <span id="getcheckcode" class="btn btn-style" style="background-color: rgb(244, 95, 3);">获取短信验证码</span>
+                            <span class="showInfo" style="display: none;">请稍后...</span>
+                            <span class="info" style="display: none;"><em>120</em>秒后重新获取</span>
+                            <div class="error smsCodeError hidden errorInfo"></div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <input type="text" style="display: none;">
+                        <dt>密　　码:</dt>
+                        <dd>
+                            <input type="password" value="" id="registerPassword" name="registerPassword"
+                                class="txt-input txt-pass hint-pass">
+                            <div class="error registerPasswordError hidden errorInfo"></div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>密码确认:</dt>
+                        <dd>
+                            <input type="password" value="" id="rePassword" name="registerPasswordRepeat"
+                                class="txt-input txt-pass2 hint-pass2">
+                            <div class="error registerPasswordRepeatError hidden errorInfo"></div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <label id="vip">
+                            <input type="checkbox" value="1" name="toBeVip" class="chk-vip">
+                            <span>我有VIP升级码</span> </label>
+                        <div id="vipinfo">
+                            <dt>升 级 码：</dt>
+                            <dd>
+                                <input type="password" value="" name="yjhId"
+                                    class="txt-input txt-passcode hint-passcode">
+                                <div class="error yjhIdError hidden errorInfo">我有VIP升级</div>
+                            </dd>
+                        </div>
+                    </dl>
+                    <dl id="vip2">
+                        <label>
+                            <input type="checkbox" value="1" id="ifaccept" name="confirmClause" class="chk-clause" checked>
+                            <span class="accept">我已满18周岁并接受</span>
+                            <a title="也买酒服务条款" target="_blank" href="//www.yesmywine.com/help/view.jspa?cid=13025"
+                                onclick="YM.page.dialog.pop({title:'阅读Yesmywine服务条款',url:'//www.yesmywine.com/help/view.jspa?cid=13025&amp;type=popwin',width:800,height:400});return false;"
+                                class="blue">《也买酒服务条款》</a>
+                            <div class="error confirmClauseError hidden errorInfo"></div>
+                        </label>
+                    </dl>
+                    <dl>
+                        <a id="toregist" class="btn-register"  disabled="false">注册完成</a>
+                    </dl>
+                </form>
+            </div>
+
+            <div class="mod-login-note fr">
+                <!-- <span>已有也买账户？<a href="/portal/toLogin.jspa">点击立即登录</a></span>  -->
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+
+</html>

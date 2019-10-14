@@ -1,0 +1,99 @@
+.rank{
+    height: 722px;
+    width: 240px;
+    float: right;
+    background-color: #f4f4f0;
+}
+.rank h1 {
+    float: none;
+    height: 40px;
+    background-position: 0 -337px;
+    overflow: hidden;
+    width: 143px;
+}
+.rank li{
+    height: 20px;
+    line-height: 20px;
+    border-top: solid 1px #ddd;
+    position: relative;
+    padding: 10px 10px 10px 35px;
+    overflow: hidden;
+}
+.ranklefthover{
+    display: block !important;
+}
+.rankahover{
+    height: 40px !important;
+}
+.ranklihover{
+    padding-left: 95px !important;
+    height: 110px !important;
+}
+.rankemhover{
+    background-position: -60px -70px !important;
+    color: white !important;
+}
+.rank a{
+    display: block;
+    height: 20px;
+    overflow: hidden;
+}
+.rank em{
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    z-index: 200;
+    display: block;
+    padding-right: 4px;
+    width: 20px;
+    height: 20px;
+    background: url(/yemai/img/sprite.png) no-repeat;
+    background-position: -85px -70px;
+    color: #5b473b;
+    text-align: center;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 14px;
+    font-family: Arial;
+    line-height: 20px;
+}
+.rankleft{
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    display: none;
+    padding: 6px 10px;
+    width: 60px;
+    height: 98px;
+    background-color: #fff;
+}
+.rankright{
+
+}
+.rankshow{
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    display: block;
+    padding: 6px 10px;
+    width: 60px;
+    height: 98px;
+    background-color: #fff;
+    _padding: 3px 10px;
+   
+}
+.rank span{
+    display: block;
+    margin-top: 10px;
+}
+.rank b{
+    display: block;
+    margin-top: 10px;
+    font-weight: normal;
+    font-size: 20px;
+    font-family: Georgia;
+    color: #c53f4c;
+}
+.rankcur{
+
+}

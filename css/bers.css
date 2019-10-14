@@ -1,0 +1,101 @@
+.fl{
+    float: left;
+
+}
+.fr{
+    float: right;
+}
+.berlist{
+    float: left;
+    width: 960px;
+    padding-top: 10px;
+}
+.berlist .headbox{
+    margin: 0 10px;
+    height: 30px;
+    border-bottom: solid 1px #d2d2ce;
+    line-height: 30px;
+}
+.berlist .title{
+    float: left;
+    display: block;
+    color: #715b4a;
+    font-size: 14px;
+    font-family: 微软雅黑;
+    line-height: 30px;
+}
+.berlist .more{
+    float: right;
+    margin-top: 4px;
+    width: 60px;
+    height: 22px;
+    background-color: #f4f4f0;
+    color: #5a463d;
+    text-align: center;
+    font-weight: normal;
+    line-height: 22px;
+    border-radius: 15px;
+}
+.berlist h3 {
+    margin: 0 10px;
+    height: 30px;
+    border-bottom: solid 1px #d2d2ce;
+    line-height: 30px;
+}
+.berlist a {
+    display: block;
+    width: 110px;
+    height: 200px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.berlist ul {
+    overflow: hidden;
+    padding: 5px;
+    height: 310px;
+}
+.berlist li {
+    float: left;
+    overflow: hidden;
+    padding: 3px;
+    width: 180px;
+    border: solid 2px transparent;
+}
+.berlist li:hover{
+    transform: translate(-3px,-3px);
+    border: 1px solid #888;
+    box-shadow:0 0 10px #888
+}
+.berlist li img{
+    width: 110px;
+    display: block;
+    opacity: 1;
+}
+.berlist .berdes{
+    padding: 10px;
+    height: 55px;
+    background-color: #f4f4f0;
+}
+.berlist .berdes p{
+    display: block;
+    overflow: hidden;
+    height: 32px;
+    color: #5b473d;
+    line-height: 16px;
+}
+.berlist .berdes b{
+    font-weight: normal;
+    font-size: 18px;
+    font-family: Georgia;
+    float: left;
+    color: #c53f4c;
+
+}
+.berlist .berbt{
+    padding: 0 10px;
+    height: 24px;
+    border-top: solid 1px #e7e7e2;
+    background-color: #f4f4f0;
+    color: #999;
+    line-height: 24px;
+}

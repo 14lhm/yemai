@@ -1,0 +1,65 @@
+.banner-box {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-bottom: 10px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border: 0;
+    text-align: center;
+}
+
+.banner-box img {
+    width: 1920px;
+    height: 500px;
+    transition: 2s;
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: banner-show 0.5s linear;
+}
+.banner-box img:hover{
+    transform: translateX(-50%) scale(1.1)
+}
+
+.banner-dotbox {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border: 0;
+}
+
+.banner-dotbox span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    background: #86685e;
+    margin-right: 10px;
+    text-align: center;
+    color: #fff;
+    font-family: "Microsoft Yahei";
+    font-size: 14px;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+.banner-active {
+    background: #D3161B !important;
+    color: white !important;
+}
+
+.banner-cur {
+    display:block  !important;
+}
+@keyframes banner-show{
+    from{ opacity: 0.1;}
+    to{ opacity: 1;}
+}

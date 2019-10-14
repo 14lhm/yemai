@@ -1,0 +1,448 @@
+.tocenter{
+    width: 980px;
+    margin: 0 auto;
+}
+.structure{
+    height: 40px;
+    line-height: 40px;
+}
+
+.lon_nav{
+    display: none !important;
+}
+.categroup{
+    display: none;
+}
+
+.categorys h3:hover+.categroup{
+    display: block !important;
+}
+.categroup:hover{
+    display: block !important;
+}
+.head-main>a{
+    display: none;
+}
+.site-bar {
+    width: 980px;
+    
+}
+.site-nav,.head-main{
+    width: 980px;
+}
+.head-search .btn-search{
+    background-position: 0 -230px;
+}
+.head-nav{
+    background-color: #7e0001;
+}
+.categorys h3{
+    background-color: #624b40 !important;
+}
+.site-nav .navlinks li.on{
+    background-color: #7e0001 !important;
+}
+
+.mega .imgbox{
+    width: 378px;
+    height: 438px;
+    padding: 39px 0;
+    float: left;
+    box-sizing: border-box;
+    background: white;
+    border: 1px solid #ccc;
+}
+.megaimg{
+    width: 220px;
+    height: 438px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.megaimg div{
+    position: absolute;
+    width: 176px;
+    height: 118px;
+    background: rgba(150,150,150,0.3);
+    left: -176px;
+    top: -118px;
+}
+.zoom{
+    position: absolute;
+    left: 647px;
+  
+    width: 378px;
+    height: 438px;
+    overflow: hidden;
+}
+.zoom img{
+    width: 150%;
+    display: none;
+    position: absolute;
+    z-index: 10000;
+    /* height: 150%; */
+}
+.moredetail{
+    padding:15px 0;
+    float: left;
+}
+.megaleft{
+    float: left;
+    height: 612px;
+    width: 380px;
+}
+.moredetail li{
+    float: left;
+    margin-right: 10px;
+    width: 68px;
+    height: 68px;
+    opacity: 0.5;
+    border: 1px solid #e6e1db;
+    background: #fff;
+    cursor: pointer;
+}
+.moredetail li:hover{
+    opacity: 1;
+}
+.moredetail ul span{
+    display: inline-block;
+    margin: 10px 7px 0;
+    line-height: 50px;
+    float: left;
+    width: 15px;
+    height: 50px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+}
+.moredetail li img{
+    display: block;
+    margin: 1px auto;
+    width: 40px;
+    height: 65px;
+}
+
+
+.act dl dt, .act .act-countdown label, #image_box span, #image_box em, .catalog .aUp, .catalog .aDown, .temperature .temp-icon, .share .addicon, .sharebox .aRight, .pro-name li .combination, .pro-info .pro-tag span, .pro-medal .gold, .pro-medal .silver, .pro-medal .copper, .pro-medal .other, .pro-medal .content span, .pro-content .gold-icon, .pro-content .silver-icon, .pro-content .copper-icon, .m-ratescore, .m-ratescore i, .pro-txt, p.year label ins, .promotionMiddleKeyN ul li a.left, .promotionMiddleKeyD ul li a.left, .promotionMiddleKeyN ul li a.right, .promotionMiddleKeyD ul li a.right, .promotionMiddleKeyN ul li a.btn-sta-rob, .promotionMiddleKeyD ul li a.btn-sta-rob, .proDetails h3 a.hover, .proDetails h3 .add-cart, .mod-listname .pro-note .icon, .mod-listname .pro-wine-num .icon, .pd-recommend-buy h3 a.hover, .promotionMiddleKeyD .act-countdown label, .pro-name li .hover .close, .promotionMiddleCenter li.explain s, .proComb .add-cart {
+    background: url(../img/icondetail.png) no-repeat;
+}
+.promotionMiddle {
+    margin-left: 400px;
+    width: 560px;
+    
+}
+
+.promotionMiddleTop {
+    position: relative;
+    z-index: 15;
+    margin-bottom: 20px;
+    width: 560px;
+    border-bottom: 1px solid #e6e1db;
+    *padding-bottom: 10px;
+}
+.pro-name {
+    display: table;
+    margin: 0 0 10px 0\9;
+    width: 560px;
+    height: auto;
+}
+.pro-name li {
+    float: left;
+    overflow: hidden;
+    line-height: 20px;
+}
+.pro-name li h1 {
+    display: block;
+    margin-right: 10px;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+}
+.pro-name li span.en {
+    display: block;
+    overflow: hidden;
+    height: 20px;
+    color: #999;
+    white-space: nowrap;
+}
+.pro-name li {
+    line-height: 20px;
+}
+.pro-info {
+    display: table;
+    width: 560px;
+}
+.pro-info li {
+    float: left;
+    width: 560px;
+}
+.mt10 {
+    margin-top: 10px;
+}
+.comment-score {
+    float: left;
+    width: 180px;
+    height: 20px;
+}
+.comment-score dt {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 60px;
+    color: #999;
+    line-height: 20px;
+}
+.comment-score dd {
+    margin-left: 65px;
+}
+.m-ratescore {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 110px;
+    height: 20px;
+    background-position: -50px -87px;
+}
+.m-ratescore i {
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 20px;
+    background-position: -50px -107px;
+    text-indent: -10000px;
+}
+
+.pro-data {
+    float: left;
+    height: 20px;
+    line-height: 20px;
+}
+.pro-data span {
+    float: left;
+    margin-right: 25px;
+    color: #999;
+}
+.pro-data span a {
+    padding-left: 5px;
+    color: #09c;
+}
+.pro-data span {
+    float: left;
+    margin-right: 25px;
+    color: #999;
+}
+.promotionMiddleCenter {
+    display: table;
+    width: 560px;
+    *padding-bottom: 14px;
+}
+.promotionMiddleCenter li.explain {
+    position: relative;
+    z-index: 8;
+}
+.promotionMiddleCenter li.w560 {
+    width: 560px;
+}
+.promotionMiddleCenter li {
+    float: left;
+    color: #999;
+    line-height: 36px;
+}
+.promotionMiddleCenter li .red {
+    color: #c00;
+}
+.promotionMiddleCenter li .currentFont {
+    margin-right: 10px;
+    font-weight: normal;
+    line-height: 30px;
+}
+.promotionMiddleCenter li .currentFont em {
+    font-weight: normal;
+    font-size: 36px;
+}
+.promotionMiddleKeyC {
+    display: table;
+    width: 560px;
+    height: auto;
+    background: #ffffe8;
+}
+.promotionMiddleKeyD {
+    z-index: 8;
+    padding: 20px;
+    width: 518px;
+    height: auto;
+    border: 1px dashed #fec083;
+}
+.promotionMiddleKeyD ul {
+    position: relative;
+    z-index: 6;
+}
+.promotionMiddleKeyD ul li {
+    z-index: 5;
+    display: block;
+    padding: 3px 0;
+    height: auto;
+    line-height: 26px;
+}
+.promotionMiddleKeyD ul li span {
+    float: left;
+    width: 60px;
+}
+.promotionMiddleKeyN ul li ins, .promotionMiddleKeyD ul li ins {
+    color: #bd0020;
+    text-decoration: none;
+}
+.promotionMiddleKeyD ul li span.cityBnt {
+    position: relative;
+    float: left;
+    display: block;
+    overflow: hidden;
+    padding: 0 5px;
+    width: 80px;
+    height: 24px;
+    border: 1px solid #ccc;
+    background: #fff;
+    line-height: 24px;
+    cursor: pointer;
+}
+.cityBnt i, .cityBntOn i, .cityBntNone i {
+    position: absolute;
+    top: 10px;
+    left: 74px;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    border-color: #999 #fff #fff;
+    border-style: solid;
+    border-width: 6px;
+}
+.promotionMiddleKeyN ul li pre, .promotionMiddleKeyD ul li pre {
+    float: left;
+    padding-left: 5px;
+    color: #f00;
+}
+.promotionMiddleKeyN ul li ins, .promotionMiddleKeyD ul li ins {
+    color: #bd0020;
+    text-decoration: none;
+}
+.promotionMiddleKeyN ul li ins.have, .promotionMiddleKeyD ul li ins.have {
+    padding-left: 5px;
+    color: #666;
+}
+.promotionMiddleKeyN ul li ins.have b, .promotionMiddleKeyD ul li ins.have b {
+    padding-right: 2px;
+    color: #c00;
+}
+.proCity {
+    position: static;
+    z-index: 1001;
+    clear: both;
+}
+.proCityList {
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    z-index: 1001;
+    float: left;
+    padding: 5px 10px;
+    width: 280px;
+    border: 2px solid #f90;
+    background: #ffffe8;
+}
+.promotionMiddleKeyD ul li {
+    z-index: 5;
+    display: block;
+    padding: 3px 0;
+    height: auto;
+    line-height: 26px;
+}
+.promotionMiddleKeyN ul li a.left, .promotionMiddleKeyD ul li a.left {
+    float: left;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+    background-position: 0 -232px;
+}
+.promotionMiddleKeyN ul li input, .promotionMiddleKeyD ul li input {
+    float: left;
+    margin-top: 3px;
+    padding: 0 3px;
+    width: 35px;
+    height: 20px;
+    border: 1px solid #e6e1db;
+    text-align: center;
+    line-height: 20px;
+}
+.promotionMiddleKeyN ul li pre, .promotionMiddleKeyD ul li pre {
+    float: left;
+    padding-left: 5px;
+    color: #f00;
+}
+.promotionMiddleKeyN ul li input, .promotionMiddleKeyD ul li input {
+    float: left;
+    margin-top: 3px;
+    padding: 0 3px;
+    width: 35px;
+    height: 20px;
+    border: 1px solid #e6e1db;
+    text-align: center;
+    line-height: 20px;
+}
+.promotionMiddleKeyD ul li span.num {
+    width: 350px;
+    color: #666;
+}
+.promotionMiddleKeyD .h44 {
+    margin-top: 10px;
+    height: 44px;
+}
+.btn-sta-rob, .btn-sta-seckill, .btn-sta-fast, .btn-end-rob, .btn-end-seckill, .btn-end-fast, .btn-over-rob, .btn-over-seckill, .btn-over-fast, .btn-sta-order, .btn-end-order, .btn-sellout, .btn-add-cart {
+    float: left;
+    overflow: hidden;
+    margin-right: 10px;
+    width: 210px;
+    height: 44px;
+    background: url(../img/icondetail.png) no-repeat;
+}
+a.btn-add-cart {
+    background-position: 0 -890px;
+}
+.promotionMiddleKeyN ul li a.right, .promotionMiddleKeyD ul li a.right {
+    float: left;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-right: 15px;
+    margin-left: 5px;
+    width: 16px;
+    height: 16px;
+    background-position: -16px -232px;
+}
+.proCityList dd {
+    float: left;
+    width: 280px;
+}
+.proCityList dd p {
+    float: left;
+    display: inline;
+    padding: 3px;
+    width: 50px;
+}
+.proCityList dd p a {
+    padding: 5px;
+    background: 0;
+    color: #36c;
+}
+
+
+.promotionMiddleKeyN ul li:after, .promotionMiddleKeyD ul li:after {
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0;
+    content: ".";
+}
+
+

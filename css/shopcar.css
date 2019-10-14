@@ -1,0 +1,596 @@
+.header-simp{
+    border-bottom: solid 2px #7e0001;
+    margin-bottom: 20px !important;
+}
+.fl {
+    float: left!important;
+}
+.header {
+    background-color: #F1EEED !important;
+    z-index: 1000;
+    position: relative;
+}
+.site-bar{
+    width: 960px;
+    margin: 0 auto;
+}
+.header, .footer, .warp {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    min-width: 960px;
+    background: #fff;
+}
+.head-bar {
+    background-repeat: repeat-x !important;
+    position: relative;
+    *z-index: 1300;
+}
+.head-main{
+    width: 960px;
+    margin: 0 auto;
+}
+.head-logo {
+    float: left;
+    display: block;
+    width: 200px;
+    height: 100px;
+    background: url(../img/logo2.png) no-repeat left center;
+}
+.head-logo a{
+    display: inline;
+    width: 160px;
+    background-size: contain;
+    height: 100px;
+    text-indent: -99999px;
+}
+.site-bar li.bldr, .site-bar li a.txt-mobile, .site-bar .sitetips a.txt-close, .site-bar li.dropdown .arrow-top, .head-search .btn-search, .head-shopcart .btn-shopcart, .head-shopcart .txt-cartcount, .head-shopcart .shopcart-list .btn-remove, .head-shopcart .shopcart-list .shopcart-sum .btn-viewcart, .head-service li h5, .site-nav .categorys h3 a, .site-nav .categorys h3 b.arrow, .sign_up a, .site-bar li.sign-hover a.sign-close {
+    background: url(../img/bg_header3.png) no-repeat;
+}
+.head-bar, .site-bar li a.txt-down, .site-bar li a.txt-logname, .site-nav .navlinks li a, .site-nav .categorys dt h4 {
+    background: url(../img/bg_header.png) no-repeat;
+}
+.s960 .head-topline .topline-main, .s960 .site-bar, .s960 .head-main, .s960 .site-nav {
+    width: 960px;
+}
+.site-bar {
+    height: 30px;
+    position: relative;
+}
+.site-bar .userinfos {
+    float: left;
+}
+.s960 .site-bar li {
+    padding: 7px;
+}
+.site-bar li {
+    float: left;
+    padding: 7px 8px;
+    line-height: 16px;
+    color: #85726c;
+    height: 16px;
+}
+.site-bar li em.member-count {
+    color: #c53f4c;
+    font-size: 14px;
+}
+.site-bar li a {
+    color: #85726c;
+    background: 0;
+}
+.site-bar li.bldr {
+    background-position: -180px -200px;
+}
+.site-bar .sitelinks {
+    float: right;
+}
+.site-bar li.dropdown {
+    position: relative;
+}
+.site-bar li a.txt-down {
+    display: block;
+    background-position: right -187px;
+    padding-right: 10px;
+}
+.site-bar li.dropdown ul, .site-bar li.dropdown p {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: #fff;
+    width: 100px;
+    padding: 5px 0;
+    color: #5b473d;
+}
+.site-bar li.dropdown li {
+    line-height: 24px;
+    padding: 0;
+    float: none;
+    margin: 0;
+    height: 24px;
+    overflow: hidden;
+}
+.site-bar li.dropdown li a {
+    display: block;
+    color: #5b473d;
+    padding: 0 8px;
+}
+.site-bar li.dropdown li a em {
+    margin-left: 5px;
+    font-weight: bold;
+    color: #c53f4c;
+}
+.site-bar li.dropdown .arrow-top {
+    display: none;
+    width: 14px;
+    height: 7px;
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    margin-left: -7px;
+    background-position: -123px -183px;
+}
+.s960 .site-bar li {
+    padding: 7px;
+}
+.site-bar li a.txt-mobile {
+    display: block;
+    background-position: -180px -182px;
+    padding-left: 15px;
+}
+.site-bar li.dropdown ul, .site-bar li.dropdown p {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: #fff;
+    width: 100px;
+    padding: 5px 0;
+    color: #5b473d;
+}
+.site-bar li.app-download li.app-top {
+    padding: 5px 10px;
+    height: 18px;
+    color: #85726c;
+    line-height: 18px;
+}
+.site-bar li.app-download li.app-center {
+    overflow: hidden;
+    padding: 5px 10px;
+    height: 110px;
+    background: #f4f4f4;
+}
+.site-bar li.app-download li.app-center dl dt {
+    float: left;
+    width: 110px;
+    height: 110px;
+}
+.site-bar li.app-download li.app-center dl dd {
+    display: block;
+    margin-left: 120px;
+}
+.site-bar li.app-download li.app-center h2 {
+    color: #73584a;
+    line-height: 22px;
+}
+.site-bar li.app-download li.app-bottom {
+    padding: 5px 10px;
+    height: 18px;
+    line-height: 18px;
+}
+.site-bar li.app-download li.app-bottom a {
+    height: 18px;
+    color: #0695d9;
+    line-height: 18px;
+}
+.site-bar li.dropdown .arrow-top {
+    display: none;
+    width: 14px;
+    height: 7px;
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    margin-left: -7px;
+    background-position: -123px -183px;
+}
+.crumbCart, .crumbCartOrder, .crumbPayWay, .crumbConfirm {
+    width: 479px;
+    float: right;
+    height: 39px;
+    margin: 30px 0;
+    background: url(//img12.yesmyimg.com/newWeb/images/cart/cart_step.png) no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+
+
+.content, .s960 .wcontent {
+    width: 961px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.listCart {
+    position: relative;
+    z-index: 500;
+}
+.listCart, .listCart h1, .listCart ul {
+    width: 960px;
+    float: left;
+}
+.listCart h1 {
+    height: 43px;
+    font: normal normal 12px/32px \5b8b\4f53;
+}
+.listCart, .listCart h1, .listCart ul {
+    width: 960px;
+    float: left;
+}
+#listCartClose {
+    width: 712px;
+    height: 43px;
+    display: block;
+    position: relative;
+    float: left;
+}
+.listCart h1 {
+    height: 43px;
+    font: normal normal 12px/32px \5b8b\4f53;
+}
+#listCartClose span {
+    width: 712px;
+    float: left;
+    border-right: 2px solid #e5e5e5;
+    border-bottom: 2px solid #e5e5e5;
+}
+#listCartClose span p {
+    width: 700px;
+    float: left;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    color: #666;
+}
+#listCartClose span p font {
+    color: #F60;
+    font-size: 12px;
+}
+#listCartClose span p a.close {
+    width: 13px;
+    height: 13px;
+    display: block;
+    text-indent: -999px;
+    overflow: hidden;
+    background-position: -317px -120px;
+    position: absolute;
+    left: 690px;
+    top: 11px;
+}
+#listCartClose span i {
+    width: 2px;
+    height: 2px;
+    display: block;
+    overflow: hidden;
+    background: #fff;
+    position: absolute;
+    left: 620px;
+    top: 0;
+    clear: both;
+}
+#listCartClose span i.b {
+    left: 0;
+    top: 34px;
+}
+#listCartClose span s {
+    width: 14px;
+    height: 9px;
+    display: block;
+    text-indent: -9999px;
+    overflow: hidden;
+    background: url(//img12.yesmyimg.com/newWeb/images/cart/titleCartTopBg.png) no-repeat;
+    position: absolute;
+    top: 33px;
+    left: 40px;
+    z-index: 4;
+}
+.listCart, .listCart h1, .listCart ul {
+    width: 960px;
+    float: left;
+}
+.listCart ul li {
+    width: 960px;
+    float: left;
+    margin: 5px 0 15px;
+    display: inline;
+}
+a {
+    color: #333;
+}
+.listCart .radio {
+    padding: 0;
+    padding: 5px;
+    height: 30px;
+    border-bottom: 2px solid #e0dad8;
+    background-color: #f1eeeb;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 30px;
+}
+.listCart .dd_sp_num {
+    position: relative;
+    float: right;
+    display: block;
+    margin-top: 7px;
+    width: 70px;
+    height: 17px;
+    background: url(//img12.yesmyimg.com/newWeb/images/cart/cart_icon.png?V20150519) 0 -86px no-repeat;
+    color: #fff;
+    text-align: center;
+    font-weight: normal;
+    line-height: 17px;
+    cursor: pointer;
+}
+.listCart .dd_sp_num i {
+    position: absolute;
+    top: 5px;
+    right: 7px;
+    display: block;
+    width: 0;
+    height: 0;
+    border: 5px solid #c75050;
+    border-top-color: #fff;
+}
+.listCart .radio .radio_lf {
+    float: left;
+    height: 30px;
+}
+.listCart .radio {
+    padding: 0;
+    padding: 5px;
+    height: 30px;
+    border-bottom: 2px solid #e0dad8;
+    background-color: #f1eeeb;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 30px;
+}
+.listCart .radio .radio_lf input {
+    display: none;
+}
+.listCart .radio .radio_lf input, .listCart .radio .radio_lf label {
+    float: left;
+}
+.listCart .radio .radio_lf input, .listCart .radio .radio_lf label {
+    float: left;
+}
+.listCart .radio .radio_lf label b {
+    display: inline-block;
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+    background: url(../img/radio.png) center center no-repeat;
+    vertical-align: middle;
+}
+.listCart ul li .top {
+    width: 960px;
+    float: left;
+    display: none;
+}
+.listCart .top .boxBorRed {
+    width: 960px;
+    border-top: 2px solid #85726c;
+}
+.listCart .top .trTitle {
+    position: relative;
+    z-index: 51;
+}
+.listCart .top .marginTop {
+    position: relative;
+    z-index: 52;
+    float: left;
+    display: inline;
+    margin-top: -1px;
+    padding: 0;
+    background-color: #fff;
+}
+.listCart .top .trFooter {
+    position: relative;
+    z-index: 49;
+    float: left;
+    display: inline;
+    border-top: 1px dotted #9e9694;
+    background-color: #f1eeeb;
+}
+.cartAddNew ul, .cartAddOld ul, .cartList ul {
+    padding: 15px;
+    width: 928px;
+    border: 1px solid #ccc;
+}
+.listCart .top .trFooter li {
+    float: left;
+    margin: 0;
+    padding: 0 15px 0 5px;
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+}
+.listCart .top .trFooter li input {
+    vertical-align: -1px;
+}
+.cartAddNew, .cartAddOld, .cartList {
+    margin-bottom: 10px;
+    border: 5px solid #e7e7e7;
+}
+.listCart .top .trTitle table {
+    background-color: #f1eeeb;
+}
+.cartList table {
+    width: 100%;
+}
+table, tbody, tfoot, thead, tr, th, td {
+    border-collapse: collapse;
+    border-spacing: 0;
+    padding: 0px;
+    margin: 0px;
+}
+.listCart .top .boxBorRed table td {
+    padding: 0 5px;
+    text-align: center;
+}
+.listCart ul li.last {
+    padding: 10px 0;
+    width: 960px;
+    border-bottom: 2px solid #e0dad8;
+    text-align: right;
+}
+.listCart ul li.last span {
+    padding-left: 25px;
+    color: #666;
+}
+.listCart ul li.last b {
+    color: #d63939;
+    font: normal bold 14px Arial;
+}
+
+
+#myCartGift{
+    border: 1px dotted #ded7d1;
+    float: left;
+}
+#myCartGift ul li {
+    float: left;
+    overflow: hidden;
+    margin: 14px 0;
+    margin-right: -1px;
+    padding: 0 1% 0 8px;
+    width: 222px;
+    border-right: 1px dotted #ded7d1;
+}
+#myCartGift ul li>a{
+    overflow: hidden;
+    display: block;
+    float: left;
+}
+#myCartGift ul li>a img{
+    float: left;
+    width: 85px;
+    height: 135px;
+}  
+#myCartGift ul li>div{
+    float: right;
+    overflow: hidden;
+    width: 130px;
+
+} 
+#myCartGift ul li>div p{
+    height: 20px;
+    line-height: 25px;
+}
+#myCartGift ul li>div>i{
+    color: #d63c3c;
+    font-weight: bold;
+    font-family: Arial,Helvetica,sans-serif;
+}
+#myCartGift ul li>div>div{
+    display: block;
+    margin-top:10px;
+    margin-right: 60px;
+    margin-bottom: 8px;
+    width: 65px;
+    height: 24px;
+    line-height: 24px;
+}
+#myCartGift ul li>div>div i{
+    float: left;
+    width: 12px;
+    height: 22px;
+    border: 1px solid #d3c6c0;
+    
+    background: #f1edeb;
+    text-align: center;
+    line-height: 22px;
+}
+#myCartGift ul li>div>div span{
+    float: left;
+    width: 30px;
+    height: 22px;
+    border: 1px solid #bea9a0;
+    text-align: center;
+    line-height: 22px;
+}
+#myCartGift ul li>div em{
+    float: left;
+    display: block;
+    padding: 4px 10px;
+    border-radius: 2px;
+    background: #c75151;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+
+
+#myshopcar{
+    width: 100%;
+    padding: 0;
+    vertical-align: middle;
+}
+#myshopcar li{
+    height: 125px;
+}
+#myshopcar li img{
+    height: 90%;
+}
+#myshopcar li p,#myshopcar li img,#myshopcar li div{
+    display: inline-block;
+    vertical-align: middle;
+}
+#myshopcar li:after{
+    content:"";
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+#myshopcar li div{
+    width: 65px;
+    height: 24px;
+    margin-right: 70px;
+    line-height: 24px;
+}
+#myshopcar li div i{
+    float: left;
+    width: 12px;
+    height: 22px;
+    border: 1px solid #d3c6c0;
+    background: #f1edeb;
+    text-align: center;
+    line-height: 22px;
+}
+#myshopcar li div span {
+    float: left;
+    width: 30px;
+    height: 22px;
+    border: 1px solid #bea9a0;
+    text-align: center;
+    line-height: 22px;
+}
+#myshopcar li input{
+    margin: 0 40px;
+}
+#myshopcar li img{
+    margin-right:30px;
+}
+#myshopcar li i{
+    display: inline-block;
+    width: 305px;
+}
+#myshopcar li>span{
+    display: inline-block;
+    width: 107px;
+    font-size: 16px;
+    font-weight: bold;
+}
+#myshopcar li em{
+    color:blue;
+}

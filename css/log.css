@@ -1,0 +1,154 @@
+.content, .wcontent {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    *zoom: 1;
+}
+.login {
+    padding: 30px 0;
+}
+.box-frame {
+    overflow: hidden;
+}
+
+.content:after, .wcontent:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.box-main {
+    padding: 0px;
+}
+.mod-login-ads {
+    float: left;
+    width: 770px;
+    text-align: center;
+}
+.mod-login {
+    padding: 4px;
+    background: url(//img10.yesmyimg.com/20140704/newWeb/images/global/loading.gif) no-repeat scroll center center #fff;
+}
+.fr {
+    float: right!important;
+}
+.mod-login2 {
+    border: 1px solid #ddd;
+    background: #fff;
+    opacity: 0;
+    filter: aplha(opacity = 0);
+    display: none;
+}
+.mod-login-list {
+    padding: 70px 50px 0px 35px;
+    background: url(../img/login_text.gif) no-repeat 30px 25px;
+}
+.mod-login dl {
+    padding: 8px 0;
+    overflow: hidden;
+}
+.mod-login dd {
+    line-height: 20px;
+    width: 300px;
+}
+.mod-login .txt-input {
+    color: #666;
+    height: 30px;
+    line-height: 32px;
+    padding: 0 5px;
+    width: 288px;
+    font-size: 14px;
+}
+.mod-login .hint-user {
+    background: #fff url(../img/hint_logname.gif) no-repeat 5px 8px;
+}
+.mod-login .hint-password {
+    background: #fff url(../img/hint-password.gif) no-repeat 5px 8px;
+}
+.mod-login .hint-rand {
+    background: #fff url(../img/hint-rand.gif) no-repeat 5px 8px;
+}
+.mod-login .rand-img {
+    margin-right: 5px;
+}
+
+.mod-login .btn-refreshrand {
+    color: #3172B2;
+    font-size: 12px;
+    width: 50px;
+    margin-right: 50px;
+    text-align: left;
+    height: 32px;
+    line-height: 32px;
+    padding-top: 6px;
+    margin-top: -12px;
+}
+.mod-login .btn-login, .mod-login .btn-register {
+    background: url(../img/btn_login.gif) repeat-x;
+    width: 300px;
+    height: 40px;
+    border: none;
+    display: block;
+    color: #fff;
+    font-family: 'Microsoft Yahei';
+    font-size: 18px;
+    cursor: pointer;
+}
+#forget {
+    padding: 2px 0;
+}
+.mod-login .partner {
+    color: #999;
+    padding: 0 30px 10px 30px;
+    _width: 260px;
+    border-top: dotted 1px #ccc;
+    margin-top: 15px;
+}
+.mod-login .partner p.dotline {
+    margin-bottom: 2px;
+}
+.mod-login .partner p {
+    line-height: 32px;
+}
+.mod-login .partner p a {
+    display: block;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.mod-login .partner p a.login-weixin {
+    width: 48px;
+    height: 48px;
+    background: url(../img/icons.png) no-repeat -103px -3px;
+    text-indent: -10000px;
+    overflow: hidden;
+}
+.mod-login .partner p a.login-alipay {
+    width: 48px;
+    height: 48px;
+    background: url(../img/icons.png) no-repeat -50px -3px;
+    text-indent: -10000px;
+    overflow: hidden;
+}
+.mod-login .partner p a.login-qq {
+    width: 48px;
+    height: 48px;
+    background: url(../img/icons.png) no-repeat 0 -3px;
+    text-indent: -10000px;
+    overflow: hidden;
+}   
+.mod-login .partner p a.login-weibo {
+    width: 48px;
+    height: 48px;
+    background: url(../img/icons.png) no-repeat -155px -3px;
+    text-indent: -10000px;
+    overflow: hidden;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
