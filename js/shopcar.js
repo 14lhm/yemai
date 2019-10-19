@@ -69,7 +69,7 @@ $(()=>{
                             ${this.querySelector("a").innerHTML}
                             <i>${this.querySelector("p").innerHTML}</i>
                             <span class="oneprice">${this.querySelector("i").innerHTML}</span>
-                            <div>${this.querySelectorAll("div")[1].innerHTML}</div>
+                            <div class="goodsnumm">${this.querySelectorAll("div")[1].innerHTML}</div>
                             <span class="oneall">￥${this.querySelector("i").innerHTML.slice(1)*this.querySelector("span").innerHTML}</span>
                             <em class="del">删除</em>
                         </li>
@@ -79,9 +79,10 @@ $(()=>{
                     $(".selectAll")[0].checked=true;
                     $(".selectAll")[1].checked=true;
                     
+                     console.log([...$(".goodsnumm span")]);
                      
-                    $(".subTotalNum_21-normal").html($("#myshopcar li").length)
-                    $(".cartGoodsNum_21-normal").html($("#myshopcar li").length)
+                    $(".subTotalNum_21-normal").html([...$(".goodsnumm span")].map(ele=>ele.innerText).reduce((a,b)=>a*1+b*1))
+                    $(".cartGoodsNum_21-normal").html([...$(".goodsnumm span")].map(ele=>ele.innerText).reduce((a,b)=>a*1+b*1))
                     $("#hollmoney").html([...$(".oneall")].map(ele=>ele.innerText.slice(1)).reduce((a,b)=>a*1+b*1))
                 }
             }
@@ -114,11 +115,15 @@ $(()=>{
             $(this).siblings("span").html($(this).siblings("span").html()*1-1)
             $(this).parent().siblings(".oneall").html("￥"+$(this).siblings("span").html()*$(this).parent().siblings(".oneprice").html().slice(1));
             $("#hollmoney").html([...$(".oneall")].map(ele=>ele.innerText.slice(1)).reduce((a,b)=>a*1+b*1))
+            $(".subTotalNum_21-normal").html([...$(".goodsnumm span")].map(ele=>ele.innerText).reduce((a,b)=>a*1+b*1))
+            $(".cartGoodsNum_21-normal").html([...$(".goodsnumm span")].map(ele=>ele.innerText).reduce((a,b)=>a*1+b*1))
         })
         $("#myshopcar").on("click",".add",function(){  
             $(this).siblings("span").html($(this).siblings("span").html()*1+1)
             $(this).parent().siblings(".oneall").html("￥"+$(this).siblings("span").html()*$(this).parent().siblings(".oneprice").html().slice(1));
             $("#hollmoney").html([...$(".oneall")].map(ele=>ele.innerText.slice(1)).reduce((a,b)=>a*1+b*1))
+            $(".subTotalNum_21-normal").html([...$(".goodsnumm span")].map(ele=>ele.innerText).reduce((a,b)=>a*1+b*1))
+            $(".cartGoodsNum_21-normal").html([...$(".goodsnumm span")].map(ele=>ele.innerText).reduce((a,b)=>a*1+b*1))
         })
         $("#myshopcar").on("click",".del",function(){
             this.parentNode.parentNode.removeChild(this.parentNode)

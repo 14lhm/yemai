@@ -595,6 +595,7 @@ button, input, select, textarea {
 
 
 .listcontain{
+    float: left;
     width: 1000px;
     position: relative;
 }

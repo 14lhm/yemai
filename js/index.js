@@ -37,7 +37,10 @@ $(()=>{
             $(".guessPageNum").append(ul)
         }
     })
-
+    
+    for(var i=0;i<$(".guessPageNum ul").length;i++){
+        $(".guessPageNum ul")[i].index=i;
+    }
 
     $.ajax({
         type:"post",
