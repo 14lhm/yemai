@@ -6,7 +6,7 @@
 
     # (2) 通过PHP代码来操作数据库
     # 001 先连接数据库
-    $db = mysqli_connect("127.0.0.1","root","","userinfo");
+    $db = mysqli_connect("127.0.0.1","root","","yemaijiu");
 
     # 002 先检查当前的用户名是否已经被注册,如果已经被注册，返回错误的提示信息。
     $sql = "SELECT * FROM usermsg WHERE username = '$username'";
@@ -24,7 +24,7 @@
         echo json_encode($response,true);
     }else{
     /* 执行插入语句 */
-        $insertSql = "INSERT INTO `userinfo`.`usermsg` (`id`, `username`, `password`, `phone`) VALUES (NULL, '$username', '$password', '$phone')";
+        $insertSql = "INSERT INTO `yemaijiu`.`usermsg` (`id`, `username`, `password`, `phone`) VALUES (NULL, '$username', '$password', '$phone')";
         $res = mysqli_query($db, $insertSql);
         // echo $insertSql ;
         $response["status"] = "ok";

@@ -90,7 +90,8 @@ $(()=>{
             if (flag!=2){
                 return;
             } 
-            randomNumber = Math.floor(Math.random()*8999)+1000;
+            //randomNumber = Math.floor(Math.random()*8999)+1000;
+            randomNumber=1111;
             console.log($("#registerMobile").val());
             
             $.ajax({
@@ -105,9 +106,10 @@ $(()=>{
                     "tNum": "T150606060601",
                 },
                 success: (result) => {
+                    console.log("手机验证码",randomNumber);
                     $("#smsCode").on("input",function(){
                         let val = $(this).val().trim();
-                        console.log(val,randomNumber);
+                        
                         
                         if (val == randomNumber) {
 
@@ -124,16 +126,22 @@ $(()=>{
             
         })
 
+        console.log($("#toregist"));
+        
         $("#toregist").on("click",function(){
+            
+            
             var c=document.querySelector("#ifaccept")
-            console.log(iftrue);
+            
             
             
             if(!c.checked){
+                console.log(11111);
                 $("#ifaccept").siblings(".error").text("请同意")
                 $("#ifaccept").siblings(".error").removeClass("hidden")
             }
             else{
+                console.log(iftrue);
                 $("#ifaccept").siblings(".error").addClass("hidden")
                 if(iftrue==5){
                     console.log(66666);
@@ -146,9 +154,11 @@ $(()=>{
                             phone:$("#registerMobile").val()
                         },
                         success:function(data){
-                            var data=JSON.parse(data);
-                            console.log(data,data.status=="error");
+                            console.log(data);
                             
+                            var data=JSON.parse(data);
+                            //console.log(data,data.status=="error");
+                            window.location.href="http://127.0.0.1/yemai/html/login.html";
                             if(data.status=="error"){
                                 console.log();
                                 

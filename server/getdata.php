@@ -1,6 +1,6 @@
 <?php 
     header("content-type:text/html;charset=utf-8"); 
-
+    $db = mysqli_connect("127.0.0.1","root","","yemaijiu");  
     $logobanner=isset($_REQUEST["logobanner"])?$_REQUEST["logobanner"] : 0;
     $turnimg=isset($_REQUEST["turnimg"])?$_REQUEST["turnimg"] : 0;
     $goodsrank=isset($_REQUEST["goodsrank"])?$_REQUEST["goodsrank"] : 0;
@@ -14,15 +14,15 @@
     $shoplist=isset($_REQUEST["shoplist"])?$_REQUEST["shoplist"] : 0;
     $list=isset($_REQUEST["list"])?$_REQUEST["list"] : 0;
     if($logobanner){
-        $db = mysqli_connect("127.0.0.1","root","","logobanner");  
+        
         mysqli_query($db, "set names 'utf8'");
-        $sql = "SELECT * FROM logo";
+        $sql = "SELECT * FROM headlogo";
         $result = mysqli_query($db,$sql);
         $data = mysqli_fetch_all($result,MYSQLI_ASSOC);
         echo json_encode($data,true);
     }
     else if($turnimg){
-        $db = mysqli_connect("127.0.0.1","root","","turnimg");  
+        //$db = mysqli_connect("127.0.0.1","root","","turnimg");  
         mysqli_query($db, "set names 'utf8'");
         $sql = "SELECT * FROM turnimg";
         $result = mysqli_query($db,$sql);
@@ -30,7 +30,7 @@
         echo json_encode($data,true);
     }
     else if($goodsrank){
-        $db = mysqli_connect("127.0.0.1","root","","goodsrank");  
+       // $db = mysqli_connect("127.0.0.1","root","","goodsrank");  
         mysqli_query($db, "set names 'utf8'");
         $sql = "SELECT * FROM goodsrank";
         $result = mysqli_query($db,$sql);
@@ -38,7 +38,7 @@
         echo json_encode($data,true);
     }
     else if($hot){
-        $db = mysqli_connect("127.0.0.1","root","","hot");  
+        //$db = mysqli_connect("127.0.0.1","root","","hot");  
         mysqli_query($db, "set names 'utf8'");
         $sql1 = "SELECT * FROM hotber";
         $sql2 = "SELECT * FROM hollsell";
@@ -61,7 +61,7 @@
         echo json_encode($data,true);
     }
     else if($title){
-        $db = mysqli_connect("127.0.0.1","root","","hot");  
+        //$db = mysqli_connect("127.0.0.1","root","","hot");  
         mysqli_query($db, "set names 'utf8'");
         $sql = "SELECT * FROM selectcard";
         $result = mysqli_query($db,$sql);
@@ -69,7 +69,7 @@
         echo json_encode($data,true);
     }
     else if($goodslist){
-        $db = mysqli_connect("127.0.0.1","root","","goodslist");  
+        //$db = mysqli_connect("127.0.0.1","root","","goodslist");  
         mysqli_query($db, "set names 'utf8'");
         $sql = "SELECT * FROM goodslist";
         $result = mysqli_query($db,$sql);
@@ -77,15 +77,15 @@
         echo json_encode($data,true);
     }
     else if($imglist){
-        $db = mysqli_connect("127.0.0.1","root","","imglist");  
+        //$db = mysqli_connect("127.0.0.1","root","","imglist");  
         mysqli_query($db, "set names 'utf8'");
-        $sql = "SELECT * FROM imglist";
+        $sql = "SELECT * FROM imgten";
         $result = mysqli_query($db,$sql);
         $data = mysqli_fetch_all($result,MYSQLI_ASSOC);
         echo json_encode($data,true);
     }
     else if($friend){
-        $db = mysqli_connect("127.0.0.1","root","","footmain");  
+        //$db = mysqli_connect("127.0.0.1","root","","footmain");  
         mysqli_query($db, "set names 'utf8'");
         $sql = "SELECT * FROM friend";
         $result = mysqli_query($db,$sql);
@@ -93,7 +93,7 @@
         echo json_encode($data,true);
     }
     else if($imglang){
-        $db = mysqli_connect("127.0.0.1","root","","imglang");  
+        //$db = mysqli_connect("127.0.0.1","root","","imglang");  
         mysqli_query($db, "set names 'utf8'");
         $sql = "SELECT * FROM imglang";
         $result = mysqli_query($db,$sql);
@@ -101,7 +101,7 @@
         echo json_encode($data,true);
     }
     else if($like){
-        $db = mysqli_connect("127.0.0.1","root","","likeber");  
+        //$db = mysqli_connect("127.0.0.1","root","","likeber");  
         mysqli_query($db, "set names 'utf8'");
         $sql = "SELECT * FROM likeber";
         $result = mysqli_query($db,$sql);
@@ -109,7 +109,7 @@
         echo json_encode($data,true);
     }
     else if($shoplist){
-        $db = mysqli_connect("127.0.0.1","root","","shoplist");  
+        //$db = mysqli_connect("127.0.0.1","root","","shoplist");  
         mysqli_query($db, "set names 'utf8'");
         $sql = "SELECT * FROM shoplist";
         $result = mysqli_query($db,$sql);
@@ -117,22 +117,14 @@
         echo json_encode($data,true);
     }
     else if($list){
-        // $db = mysqli_connect("127.0.0.1","root","","list");  
-        // mysqli_query($db, "set names 'utf8'");
-        // $sql = "SELECT * FROM list";
-        // $result = mysqli_query($db,$sql);
-        // $data = mysqli_fetch_all($result,MYSQLI_ASSOC);
-        // echo json_encode($data,true);
 
-
-        $db = mysqli_connect("127.0.0.1","root","","list");
+       // $db = mysqli_connect("127.0.0.1","root","","list");
         mysqli_query($db, "set names 'utf8'");
 
         
         $page = ($_REQUEST["page"] -1 ) * 30;
         $sql = "SELECT * FROM listall LIMIT $page, 30";
         $result = mysqli_query($db,$sql);
-        # 03-把数据库中的获取所有数据转换为JSON返回
         $data = mysqli_fetch_all($result,MYSQLI_ASSOC);
         echo json_encode($data,true);
     }

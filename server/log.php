@@ -1,6 +1,6 @@
 <?php
     header('Access-Control-Allow-Origin:*');
-    $db = mysqli_connect("127.0.0.1", "root", "", "userinfo");
+    $db = mysqli_connect("127.0.0.1", "root", "", "yemaijiu");
     $username=$_POST["username"];
     $password=$_POST["password"];
     

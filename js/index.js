@@ -107,6 +107,8 @@ $(()=>{
                 logobanner:true
             },
             success:function(data){
+                console.log(data,"=====");
+                
                 var obj=document.querySelector(".banner");
                 var a = new banner(JSON.parse(data),obj);
                 a.init();

@@ -57,7 +57,7 @@ var banner=(function(){
             let dots = this.oDots.querySelectorAll("span");
             // 自动播放(根据索引按顺序循环显示图，加样式让其显示)
             this.timer = setInterval(() => {
-                console.log("自动轮播this.index=",this.index);
+                //console.log("自动轮播this.index=",this.index);
                 /* 排它，清除 */
                 this.clear();
                 this.index += 1;
